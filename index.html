@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Line icons -->
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+    <!-- PHP -->
+    <link rel="stylesheet" href="connect_db.php">
+
+    <title>Samyak Jain Portfolio</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <!-- Navigation -->
+        <nav class="nav container padd-15">
+            <!-- Nav logo -->
+            <a href="#" class="nav-logo">
+                <h2>Samyak</h2>
+            </a>
+            <!-- Nav menu -->
+            <div class="nav-menu" id="nav-menu">
+                <!-- Nav list-->
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <!--    <li class="nav-item">
+                        <a href="#experience" class="nav-link">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#pricing" class="nav-link">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blogs" class="nav-link">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>        -->
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <!--  Nav close -->
+                <div class="nav-close" id="nav-close">
+                    <i class="lni lni-close"></i>
+                </div>
+            </div>
+
+            <!-- Nav button -->
+            <div class="nav-btns">
+                <!-- Theme change Button -->
+                <i class="lni lni-pallet change-theme" id="theme-button"></i>
+                <!-- Toggle button -->
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="lni lni-grid-alt"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main-content">
+        <!-- Home -->
+        <section class="home" id="home">
+            <div class="container">
+                <!-- Introduction -->
+                <div class="intro">
+                    <!-- Avatar image -->
+                    <img src="img/avatar-1.svg" alt="Samyak">
+                    <!-- Info -->
+                    <h1>Samyak Jain</h1>
+                    <span><span class="info-text">"Ambitious, goal-oriented tech enthusiast leveraging programming, web
+                            development, leadership, and communication skills for success. Thrives in growth-focused
+                            environments, passionate about learning and collaboration."</span></span>
+                    <!-- Social icons -->
+                    <ul class="social-icons">
+                        <li><a href="https://www.linkedin.com/in/samyak-jain-543669258"><i
+                                    class="lni lni-linkedin-original"></i></a></li>
+                        <li><a href="https://github.com/Samyakjain2"><i class="lni lni-github-original"></i></a></li>
+                        <li><a href="https://www.instagram.com/samyak_jain027?igsh=dXk3ZXRicG1mc25z"><i
+                                    class="lni lni-instagram-original"></i></a></li>
+                        <!--  <li><a href="#"><i class="lni lni-dribbble"></i></a></li>
+                        <li><a href="#"><i class="lni lni-pinterest"></i></a></li> -->
+                    </ul>
+                    <!-- Button -->
+                    <div>
+                        <a href="#about" class="btn btn-default">Explore more about me</a>
+                    </div>
+                    <!-- Scroll down mouse wheel -->
+                    <!--     <div class="scroll-down">
+                        <a href="#about" class="mouse-wrapper">
+                            <span>Scroll Down</span>
+                            <span class="mouse">
+                                <span class="wheel"></span>
+                            </span>    
+                        </a>
+                    </div>  -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about section" id="about">
+            <div class="container">
+                <!-- Section title -->
+                <h2 class="section-title padd-15">About Me</h2>
+                <div class="row">
+                    <div class="about-img padd-15">
+                        <!-- Avatar image -->
+                        <img src="img/avatar-2.svg" alt="">
+                    </div>
+                    <div class="about-content padd-15">
+                        <div class="rounded">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <!-- About text -->
+                                    <p>"As a third-year CSE student, I'm deeply dedicated to programming and web
+                                        development, proficient in both frontend and backend tasks. Demonstrating strong
+                                        leadership and communication abilities, I've led successful teams in hackathons.
+                                        Thriving in challenging environments, I quickly grasp concepts, possess strong
+                                        listening skills, and excel under pressure."</p>
+                                    <div>
+                                        <a href="https://drive.google.com/file/d/1n79J2Z3LlUdfYum0fHvNM6UnofI1FrU_/view?usp=sharing"
+                                            class="btn btn-default">See my Resume</a>
+                                    </div>
+                                </div>
+                                <div class="skills padd-15">
+                                    <div class="row">
+                                        <!-- Skills item -->
+                                        <div class="skill-item">
+                                            <h4>Web Development</h4>
+                                            <div class="progress">
+                                                <div class="progress-in"
+                                                    style="width: 95%; background: rgb(108, 108, 229);"></div>
+                                                <div class="skill-percent">95%</div>
+                                            </div>
+                                        </div>
+                                        <!-- Skills item -->
+                                        <div class="skill-item">
+                                            <h4>Programming</h4>
+                                            <div class="progress">
+                                                <div class="progress-in"
+                                                    style="width: 80%; background: rgb(249, 215, 00);"></div>
+                                                <div class="skill-percent">80%</div>
+                                            </div>
+                                        </div>
+                                        <!-- Skills item -->
+                                        <div class="skill-item">
+                                            <h4>Communication Skills</h4>
+                                            <div class="progress">
+                                                <div class="progress-in"
+                                                    style="width: 90%; background: rgb(249, 123, 139);"></div>
+                                                <div class="skill-percent">90%</div>
+                                            </div>
+                                        </div>
+                                        <!-- Skills item -->
+                                        <div class="skill-item">
+                                            <h4>Management Skills</h4>
+                                            <div class="progress">
+                                                <div class="progress-in"
+                                                    style="width: 95%; background: hsl(152, 75%, 60%);"></div>
+                                                <div class="skill-percent">95%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Fact item -->
+                    <div class="fact-item padd-15">
+                        <i class="lni lni-thumbs-up"></i>
+                        <div class="details">
+                            <h3>25+</h3>
+                            <p>Projects</p>
+                        </div>
+                    </div>
+                    <!-- Fact item -->
+                    <div class="fact-item padd-15">
+                        <i class="lni lni-envelope"></i>
+                        <div class="details">
+                            <h3>20+</h3>
+                            <p>Certifications</p>
+                        </div>
+                    </div>
+                    <!-- Fact item -->
+                    <div class="fact-item padd-15">
+                        <i class="lni lni-users"></i>
+                        <div class="details">
+                            <h3>10</h3>
+                            <p>Hackathons</p>
+                        </div>
+                    </div>
+                    <!-- Fact item -->
+                    <div class="fact-item padd-15">
+                        <i class="lni lni-cup"></i>
+                        <div class="details">
+                            <h3>5</h3>
+                            <p>Awards and Honors</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="services section">
+            <div class="container">
+                <!-- Section title -->
+                <h2 class="section-title padd-15">Skills</h2>
+                <div class="row">
+                    <!-- Services item -->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner" style="background: rgb(108, 108, 229);">
+                            <img src="img/service-2.svg" alt="">
+                            <h3>Programming Languages</h3>
+                            <p>C, Java, Python</p>
+                            <p>HTML, CSS, JavaScipt</p>
+                            <p>Git, SQL</p>
+                        </div>
+                    </div>
+                    <!-- Services item -->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner" style="background: rgb(249, 215, 00);">
+                            <img src="img/service-1.svg" alt="">
+                            <h3>Frameworks & Databases</h3>
+                            <p>React.js</p>
+                            <p>Tailwind CSS</p>
+                            <p>MySQL</p>
+                        </div>
+                    </div>
+                    <!-- Services item -->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner" style="background: rgb(249, 123, 139);">
+                            <img src="img/service-3.svg" alt="">
+                            <h3>Tools and Platforms</h3>
+                            <p>Github</p>
+                            <p>AWS</p>
+                            <p>Project Management Tool: Jira</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Services item -->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner" style="background: rgb(108, 108, 229);">
+                            <img src="img/service-2.svg" alt="">
+                            <h3>Design Tools & Softwares</h3>
+                            <p>Figma</p>
+                            <p>MS Excel</p>
+                            <p>Power BI</p>
+                        </div>
+                    </div>
+                    <!-- Services item -->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner" style="background: rgb(249, 215, 0);">
+                            <img src="img/service-1.svg" alt="">
+                            <h3>Other Non - Verbal Skills</h3>
+                            <p>Listening</p>
+                            <p>Leadership</p>
+                            <p>Team Work</p>
+                        </div>
+                    </div>
+                    <!-- Services item -->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner" style="background: rgb(249, 123, 139);">
+                            <img src="img/service-3.svg" alt="">
+                            <h3>Others</h3>
+                            <p>Data Structures and Algorithm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text padd-15">
+                    <p>Looking for a custom job? <a href="#contact">Click here</a> to contact me!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="services section">
+            <div class="container">
+                <!-- Section title -->
+                <h2 class="section-title padd-15">Education</h2>
+                <div class="row">
+                    <!-- Services item -->
+                    <div class="timeline-box">
+                        <div class="timeline">
+                            <!-- Timeline item -->
+                            <div class="timeline-item">
+                                <i class="lni lni-graduation timeline-icon"></i>
+                                <h3 class="timeline-date">
+                                    <i class="lni lni-calendar"></i>2021 - Present
+                                </h3>
+                                <h3 class="timeline-title">Bachelor of Technology (Computer Science and Engineering)
+                                </h3>
+                                <p class="timeline-text"><i class="fa-solid fa-graduation-cap"></i> Deogiri
+                                    Institute of Engineering and Management Studies</p>
+                                <p class="timeline-text"><i class=" fa-solid fa-location-dot"></i> Aurangabad,
+                                    Maharashtra</p>
+                                <p class="timeline-text">Grades: 8.34/10 CGPA</p>
+                            </div>
+                            <!-- Timeline item -->
+                            <div class="timeline-item">
+                                <i class="lni lni-graduation timeline-icon"></i>
+                                <h3 class="timeline-date">
+                                    <i class="lni lni-calendar"></i>2019 - 2021
+                                </h3>
+                                <h3 class="timeline-title">HSC (XII)</h3>
+                                <p class="timeline-text"><i class="fa-solid fa-building-columns"></i> Sarosh Junior
+                                    College</p>
+                                <p class="timeline-text"><i class=" fa-solid fa-location-dot"></i> Aurangabad,
+                                    Maharashtra</p>
+                                <p class="timeline-text">Percentage: 91.33%</p>
+                            </div>
+                            <!-- Timeline item -->
+                            <div class="timeline-item">
+                                <i class="lni lni-graduation timeline-icon"></i>
+                                <h3 class="timeline-date">
+                                    <i class="lni lni-calendar"></i>2009 - 2019
+                                </h3>
+                                <h3 class="timeline-title">CBSE (X)</h3>
+                                <p class="timeline-text"><i class="fa-solid fa-school"></i> Agrasen Vidya Mandir</p>
+                                <p class="timeline-text"><i class=" fa-solid fa-location-dot"></i> Aurangabad,
+                                    Maharashtra</p>
+                                <p class="timeline-text">Percentage: 84.20%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="section" id="experience">
+            <div class="container">
+                <!-- Section title -->
+                <h2 class="section-title padd-15">Experience</h2>
+                <div class="row">
+                    <!-- Education -->
+                    <div class="education padd-15">
+                        <div class="row">
+                            <div class="timeline-box">
+                                <div class="timeline">
+                                    <!-- Timeline item -->
+                                    <div class="timeline-item">
+                                        <i class="lni lni-graduation timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> March 2024 - April 2024
+                                        </h3>
+                                        <h3 class="timeline-title">DEOTECH 2K24: Event Coordinator, <span
+                                                style="color: hsl(252, 15%, 65%);"><i>Onsite</i></span></h3>
+                                        <p class="timeline-text">Managed event logistics meticulously to guarantee
+                                            seamless operations and exceptional attendee experiences.</p>
+                                        <p class="timeline-text">Organized and supervised a diverse array of event
+                                            activities.</p>
+                                    </div>
+                                    <!-- Timeline item -->
+                                    <div class="timeline-item">
+                                        <i class="lni lni-graduation timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> Dec 2023 - Jan 2024
+                                        </h3>
+                                        <h3 class="timeline-title">IBM: Internship, <span
+                                                style="color: hsl(252, 15%, 65%);"><i>Remote</i></span></h3>
+                                        <p class="timeline-text">Acquired foundational knowledge in cloud computing and
+                                            data science. Completed two courses.</p>
+                                        <p class="timeline-text">“Cloud Computing Fundamentals” & “Getting Started with
+                                            Enterprise Data Science”.</p>
+                                    </div>
+                                    <!-- Timeline item -->
+                                    <div class="timeline-item">
+                                        <i class="lni lni-graduation timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> Oct 2023 - Oct 2023
+                                        </h3>
+                                        <h3 class="timeline-title">Oasis Infobyte: Web Development Internship, <span
+                                                style="color: hsl(252, 15%, 65%);"><i>Remote</i></span>
+                                        </h3>
+                                        <p class="timeline-text">Demonstrated proficiency in UI design, functionality
+                                            implementation.</p>
+                                        <p class="timeline-text">Developed three projects including: Portfolio
+                                            showcasing skills and experience, Amazon clone web application development,
+                                            Temperature converter.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="education padd-15">
+                        <div class="row">
+                            <div class="timeline-box">
+                                <div class="timeline">
+                                    <!-- Timeline item -->
+                                    <div class="timeline-item">
+                                        <i class="lni lni-graduation timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> Sept 2023 - Sept 2023
+                                        </h3>
+                                        <h3 class="timeline-title">TechnoHacks EduTech: Web Development Internship,
+                                            <span style="color: hsl(252, 15%, 65%);"><i>Remote</i></span>
+                                        </h3>
+                                        <p class="timeline-text">Crafted a Netflix clone with HTML, CSS, JS. Emphasizing
+                                            skills in layout, design etc.
+                                        </p>
+                                        <p class="timeline-text">Demonstrated proficiency in implementing calculator
+                                            features using fundamental web technologies.
+                                        </p>
+                                    </div>
+                                    <!-- Timeline item -->
+                                    <div class="timeline-item">
+                                        <i class="lni lni-graduation timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> June 2022 - Sept 2022
+                                        </h3>
+                                        <h3 class="timeline-title">TEDx DIETMS: Head, Guest Care Department, <span
+                                                style="color: hsl(252, 15%, 65%);"><i>Onsite</i></span></h3>
+                                        <p class="timeline-text">Oversaw guest management for our prominent guest, Mr.
+                                            Harshawardhan Shahi. Orchestrated seamless experience.</p>
+                                        <p class="timeline-text">Demonstrated strong organizational and communication
+                                            skills.
+                                        </p>
+                                        <p class="timeline-text">Was responsible for the smooth and successful execution
+                                            of the event.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section class="portfolio section" id="portfolio">
+            <div class="container">
+                <!-- Sectoin title -->
+                <h2 class="section-title padd-15">Projects</h2>
+                <div class="row">
+                    <div class="portfolio-filter padd-15">
+                        <div class="portfolio-filter-inner">
+                            <button type="button" class="active" data-filter="all">All</button>
+                            <button type="button" data-filter="art">Web Dev</button>
+                            <button type="button" data-filter="creative">Python</button>
+                            <button type="button" data-filter="design">Others</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Portfolio items -->
+                    <div class="portfolio-item padd-15" data-category="art">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="img/1.svg" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">Web Development</span>
+                            <h3 class="portfolio-item-title">DIEMS: Smart Feedback System</h3>
+                            <span class="more-button">&hellip;</span>
+                        </div>
+                    </div>
+                    <!-- Portfolio items -->
+                    <div class="portfolio-item padd-15" data-category="creative">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="img/3.svg" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">Python</span>
+                            <h3 class="portfolio-item-title">Parkinson Disease Detection</h3>
+                            <span class="more-button">&hellip;</span>
+                        </div>
+                    </div>
+                    <!-- Portfolio items -->
+                    <div class="portfolio-item padd-15" data-category="design">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="img/2.svg" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">AR/VR</span>
+                            <h3 class="portfolio-item-title">AR/VR Live Training of Troops</h3>
+                            <span class="more-button">&hellip;</span>
+                        </div>
+                    </div>
+                    <!-- Portfolio items -->
+                    <div class="portfolio-item padd-15" data-category="art">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="img/4.svg" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">Web Development</span>
+                            <h3 class="portfolio-item-title">Election Commission of DIEMS</h3>
+                            <span class="more-button">&hellip;</span>
+                        </div>
+                    </div>
+                    <!-- Portfolio items -->
+                    <div class="portfolio-item padd-15" data-category="creative">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="img/6.svg" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">Python</span>
+                            <h3 class="portfolio-item-title">Jarvis: AI Desktop Voice Assistant</h3>
+                            <span class="more-button">&hellip;</span>
+                        </div>
+                    </div>
+                    <!-- Portfolio items -->
+                    <div class="portfolio-item padd-15" data-category="design">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="img/5.svg" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">IOT, Arduino, Sensors</span>
+                            <h3 class="portfolio-item-title">Plastic Shredder Machine</h3>
+                            <span class="more-button">&hellip;</span>
+                        </div>
+                    </div>
+                    <!-- Portfolio items -->
+                    <div class="portfolio-item padd-15" data-category="art">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="img/3.svg" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">Web Development</span>
+                            <h3 class="portfolio-item-title">DIEMS: College Website</h3>
+                            <span class="more-button">&hellip;</span>
+                        </div>
+                    </div>
+                    <!-- Portfolio items -->
+                    <div class="portfolio-item padd-15" data-category="art">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="img/2.svg" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">Web Development</span>
+                            <h3 class="portfolio-item-title">The Heritage: Monument Website</h3>
+                            <span class="more-button">&hellip;</span>
+                        </div>
+                    </div>
+                    <!-- Portfolio items -->
+                    <div class="portfolio-item padd-15" data-category="art">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="img/1.svg" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">Web Development</span>
+                            <h3 class="portfolio-item-title">Netflix Clone Web Application</h3>
+                            <span class="more-button">&hellip;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog -->
+        <section class="section" id="blogs">
+            <div class="container">
+                <!-- Section title -->
+                <h2 class="section-title padd-15">Licenses & Certifications</h2>
+                <div class="row">
+                    <!-- Blog item -->
+                    <div class="blog-item padd-15">
+                        <div class="inner">
+                            <div class="thumb">
+                                <a href="#blog"><span class="category">Grade: A+</span></a>
+                                <a href="#blog"><img src="img/3.svg" alt=""></a>
+                            </div>
+                            <div class="details">
+                                <h3 class="title"><a href="#blog">C Programming</a></h3>
+                                <ul class="meta">
+                                    <li>Feb 2023</li>
+                                    <li>Digitize IT Station</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Blog item -->
+                    <div class="blog-item padd-15">
+                        <div class="inner">
+                            <div class="thumb">
+                                <a href="#blog"><span class="category">Grade: A+</span></a>
+                                <a href="#blog"><img src="img/1.svg" alt=""></a>
+                            </div>
+                            <div class="details">
+                                <h3 class="title"><a href="#blog">Java Programming</a></h3>
+                                <ul class="meta">
+                                    <li>Aug 2023</li>
+                                    <li>Digitize IT Station</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Blog item -->
+                    <div class="blog-item padd-15">
+                        <div class="inner">
+                            <div class="thumb">
+                                <a href="#blog"><span class="category">Workshop</span></a>
+                                <a href="#blog"><img src="img/6.svg" alt=""></a>
+                            </div>
+                            <div class="details">
+                                <h3 class="title"><a href="#blog">Google Cloud Computing</a></h3>
+                                <ul class="meta">
+                                    <li>Jan 2023</li>
+                                    <li>IIT Bombay</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Blog item -->
+                    <div class="blog-item padd-15">
+                        <div class="inner">
+                            <div class="thumb">
+                                <a href="#blog"><span class="category">Workshop</span></a>
+                                <a href="#blog"><img src="img/2.svg" alt=""></a>
+                            </div>
+                            <div class="details">
+                                <h3 class="title"><a href="#blog">Web 3.0</a></h3>
+                                <ul class="meta">
+                                    <li>Jan 2023</li>
+                                    <li>IIT Bombay</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Blog item -->
+                    <div class="blog-item padd-15">
+                        <div class="inner">
+                            <div class="thumb">
+                                <a href="#blog"><span class="category">Hackathon</span></a>
+                                <a href="#blog"><img src="img/4.svg" alt=""></a>
+                            </div>
+                            <div class="details">
+                                <h3 class="title"><a href="#blog">SUNHACKS-2022</a></h3>
+                                <ul class="meta">
+                                    <li>Nov 2022</li>
+                                    <li>Sandip University, Nashik</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Blog item -->
+                    <div class="blog-item padd-15">
+                        <div class="inner">
+                            <div class="thumb">
+                                <a href="#blog"><span class="category">Workshop</span></a>
+                                <a href="#blog"><img src="img/5.svg" alt=""></a>
+                            </div>
+                            <div class="details">
+                                <h3 class="title"><a href="#blog">Front-End Web Development</a></h3>
+                                <ul class="meta">
+                                    <li>Aug 2023</li>
+                                    <li>DevTown</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section class="section pricing" id="pricing">
+            <div class="container">
+                <!-- Sectoin Title -->
+                <h2 class="section-title padd-15">Achievements</h2>
+                <div class="row">
+                    <!-- Prices -->
+                    <div class="prices">
+                        <div class="price-item">
+                            <img src="img/price-1.svg" alt="">
+                            <h3 class="plan">REVA HACK 2023</h3>
+                            <p>Got selected amongst top 25 teams out off 1500+ teams.</p>
+                            <p>Developed an AR/VR simulation for military training.</p>
+                            <p>We were the only team to be selected from Maharashtra.</p>
+                            <!--   <h3 class="price"><em>$</em>9<span>Month</span></h3>
+                            <a href="#" class="btn btn-default">Get Started</a>  -->
+                        </div>
+                    </div>
+                    <!-- Prices -->
+                    <div class="prices">
+                        <div class="price-item best">
+                            <span class="badge"> SHODH - 2024</span>
+                            <img src="img/price-2.svg" alt="">
+                            <h3 class="plan">WINNER</h3>
+                            <p>Our project "DIEMS Smart Feedback System", has clinched the 1st prize at SHODH 2024 held
+                                at DIEMS.
+                            </p>
+                            <p>Received Rs.7000 along with a prestigious gold medal and certificate.</p>
+                            <!--  <h3 class="price"><em>$</em>49<span>Month</span></h3>
+                            <a href="#" class="btn btn-default">Get Started</a>  -->
+                        </div>
+                    </div>
+                    <!-- Prices -->
+                    <div class="prices">
+                        <div class="price-item">
+                            <img src="img/price-3.svg" alt="">
+                            <h3 class="plan">NCAT IFEHE: AIR 18</h3>
+                            <p>I ranked 18th across country in the NCAT 2024 exam, which primarily assessed aptitude and
+                                logical thinking.</p>
+                            <p>During the initial round, I attained the 83.7 percentile, leading to my selection for the
+                                second round.</p>
+                            <!--       <h3 class="price"><em>$</em>99<span>Month</span></h3>
+                            <a href="#" class="btn btn-default">Get Started</a>  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial -->
+        <section class="section">
+            <div class="container">
+                <!-- Section title -->
+                <h2 class="section-title padd-15">Interests & Hobbies</h2>
+                <!-- Testimonial avatar -->
+                <div class="swiper testimonial-wrapper">
+                    <div class="swiper-wrapper">
+                        <!-- Testimonial item -->
+                        <div class="testimonial-item swiper-slide">
+                            <!--     <div class="thumb">
+                                <img src="img/avatar-3.svg" alt="">
+                            </div>
+                            <h3>John Doe</h3>
+                            <span class="subtitle">Project Designer at Aura</span>   -->
+                            <div class="comment">Playing & watching cricket</div>
+                        </div>
+                        <!-- Testimonial item -->
+                        <div class="testimonial-item swiper-slide">
+                            <!--            <div class="thumb">
+                                <img src="img/avatar-1.svg" alt="">
+                            </div>
+                            <h3>John Doe</h3>
+                            <span class="subtitle">Project Designer at Aura</span>   -->
+                            <div class="comment">Listening music</div>
+                        </div>
+                        <!-- Testimonial item -->
+                        <div class="testimonial-item swiper-slide">
+                            <!--            <div class="thumb">
+                                <img src="img/avatar-1.svg" alt="">
+                            </div>
+                            <h3>John Doe</h3>
+                            <span class="subtitle">Project Designer at Aura</span>   -->
+                            <div class="comment">Politics</div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section" id="contact">
+            <div class="container">
+                <!-- Section title -->
+                <h2 class="section-title padd-15">Contact me</h2>
+                <div class="row">
+                    <!-- Contact box -->
+                    <div class="contact-box padd-15">
+                        <div class="contact-data">
+                            <!-- Contact information -->
+                            <div class="contact-information">
+                                <h3 class="contact-subtitle">Contact number</h3>
+                                <span class="contact-description">
+                                    <i class="lni lni-phone contact-icon"></i>
+                                    +91 9699609927
+                                </span>
+                            </div>
+                            <!-- Contact information -->
+                            <div class="contact-information">
+                                <h3 class="contact-subtitle">Email address</h3>
+                                <span class="contact-description">
+                                    <i class="lni lni-user contact-icon"></i>
+                                    samdjain2003@gmail.com
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contact form -->
+                    <form action="connect_db.php" method="post" class="contact-form padd-15">
+                        <div class="contact-inputs">
+                            <!-- Contact content -->
+                            <div class="contact-content">
+                                <input type="text" class="contact-input" name="username">
+                                <label for="" class="contact-label">Name</label>
+                                <span></span>
+                            </div>
+                            <div class="contact-content">
+                                <input type="email" class="contact-input" name="email">
+                                <label for="" class="contact-label">Email address</label>
+                                <span></span>
+                            </div>
+                            <!-- Contact content -->
+                            <div class="contact-content">
+                                <input type="text" class="contact-input" name="subject">
+                                <label for="" class="contact-label">Subject</label>
+                                <span></span>
+                            </div>
+                            <!-- Contact content -->
+                            <div class="contact-content contact-area">
+                                <textarea name="message" id="" cols="30" rows="10" class="contact-input"></textarea>
+                                <label for="" class="contact-label">Message</label>
+                                <span></span>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-default" name="submit">Send Messsage</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-text padd-15">
+                    <p>&copy; Samyak Jain Portfolio</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Theme customization -->
+    <div class="customize-theme">
+        <div class="card">
+            <h2>Customize your view</h2>
+            <p>Manage your font size, color, and background.</p>
+            <!-- Font size -->
+            <div class="font-size">
+                <h3>Font size</h3>
+                <div>
+                    <h6>Aa</h6>
+                    <div class="choose-size">
+                        <span class="font-size-1"></span>
+                        <span class="font-size-2"></span>
+                        <span class="font-size-3 active"></span>
+                        <span class="font-size-4"></span>
+                    </div>
+                    <h3>Aa</h3>
+                </div>
+            </div>
+            <!-- Color -->
+            <div class="color">
+                <h3>Color</h3>
+                <div class="choose-color">
+                    <span class="color-1"></span>
+                    <span class="color-2"></span>
+                    <span class="color-3 active"></span>
+                    <span class="color-4"></span>
+                    <span class="color-5"></span>
+                </div>
+            </div>
+            <!-- Background -->
+            <div class="background">
+                <h3>Background</h3>
+                <div class="choose-bg">
+                    <div class="bg-1 active">
+                        <span></span>
+                        <h5 for="bg-1">Light</h5>
+                    </div>
+                    <div class="bg-2">
+                        <span></span>
+                        <h5 for="bg-2">Dim</h5>
+                    </div>
+                    <div class="bg-3">
+                        <span></span>
+                        <h5 for="bg-3">Dark</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>
